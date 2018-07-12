@@ -49,7 +49,7 @@
   "scripts": {
     "patch": "npm version patch",
     "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count; npm run countTS; npm run countHTML; npm run countJS; npm run countJson",
-    "publish": "npm version patch; apm publish",
+    "publish": "apm publish",
     "build_snippets": "npm run build_html; npm run build_typescript; npm run build_javascript; npm run build_json",
     "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
     "build_html": "cat src/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"html\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".text.html\": .}' > snippets/html.json",
