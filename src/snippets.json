@@ -9,7 +9,7 @@
       "@Component({",
       "\tselector: '${1:app}-${2:name}',",
       "\ttemplateUrl: './${2:name}.component.html',",
-      "\tstyleUrls: ['./${2:name}.component.${3:scss,less,css}']",
+      "\tstyleUrls: ['./${2:name}.component.${3|scss,less,css|}']",
       "})",
       "export class ${4:Name}Component implements OnInit {",
       "\tconstructor($5) { }",
@@ -402,9 +402,9 @@
       "{{ ${variable} | lowercase }$0"
     ]
   },
-  "Angular TitleCase Pipe": {
+  "Angular TitleCase Pipe": {
     "prefix": "ng-pipe-titlecase",
-    "description": "v4: Titlecase pipe",
+    "description": "v4: Titlecase pipe",
     "types": "typescript, html",
     "body": [
       "{{ ${variable} | titlecase }$0"
@@ -2309,7 +2309,7 @@
     ]
   },
   "RxJS Import Subject": {
-    "prefix": "rx-import-subject",
+    "prefix": "rx-import-observable",
     "description": "RxJS Import Subject",
     "types": "typescript, javascript",
     "body": [

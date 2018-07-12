@@ -1,0 +1,11 @@
+{
+    "RxJS Import Subject": {
+      "prefix": "rx-import-subject",
+      "description": "RxJS Import Subject",
+      "types": "typescript, javascript",
+      "body": [
+        "import { Subject } from 'rxjs';",
+        "$1"
+      ]
+    }
+}
