@@ -146,7 +146,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-directive-attribute | Attribute directive |
 | ng-directive-css | CSS directive |
 | ng-doCheck | Lifecycle hook: Called every time that the input properties of a component or a directive are checked |
-| ng-event | Event: (event) = \"onEvent()\" |
+| ng-event | Event: (event) = \"expression()\" |
 | ng-filter | For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe. |
 | ng-for | For-loop directive |
 | ng-for-index | For-loop directive with index |
@@ -155,10 +155,10 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-girls | Angular Girls |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
-| ng-http-get | Http observable get request |
+| ng-http-get | HttpClient observable get request |
 | ng-http-get-post | Http observable get & post request |
+| ng-http-get-v2 | Deprecated Http observable get request |
 | ng-http-interceptor | Intercept an outgoing HttpRequest and optionally transform it or the response. |
-| ng-httpClient-get | HttpClient observable get request |
 | ng-if | If directive: *ngIf=\"expression\" |
 | ng-if-else | v4: If else directive: *ngIf=\"expression; else\" |
 | ng-if-then-else | v4: If then else directive: *ngIf=\"expression; then; else\" |
@@ -166,6 +166,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
 | ng-material-module | App Material Module |
+| ng-model | Two-way data binding with the NgModel |
 | ng-module | Feature Module |
 | ng-module-root | App root module |
 | ng-ngOnChanges | Lifecycle hook: Called before any other lifecycle hook |

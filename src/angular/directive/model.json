@@ -1,0 +1,26 @@
+{
+    "Angular Oneway Binding": {
+        "prefix": "ng-binding-oneway",
+        "description": "Property: [property]=\"expression\"",
+        "types": "typescript, html",
+        "body": [
+            "[${property}]=\"${expression}\"$0"
+        ]
+    },
+    "Angular Twoway Binding": {
+        "prefix": "ng-binding-twoway",
+        "description": "Two-way data binding with the NgModel",
+        "types": "typescript, html",
+        "body": [
+            "[(ngModel)]=\"${Name}\"$0"
+        ]
+    },
+    "Angular Model Binding": {
+        "prefix": "ng-model",
+        "description": "Two-way data binding with the NgModel",
+        "types": "typescript, html",
+        "body": [
+            "[(ngModel)]=\"${Name}\"$0"
+        ]
+    }
+}

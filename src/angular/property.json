@@ -1,0 +1,18 @@
+{
+    "Angular Input Property": {
+        "prefix": "ng-input",
+        "description": "Class Input Property",
+        "types": "typescript",
+        "body": [
+            "@Input() ${1:class}: ${2:Class};$0"
+        ]
+    },
+    "Angular Output Event": {
+        "prefix": "ng-output",
+        "description": "Class Output Event",
+        "types": "typescript",
+        "body": [
+            "@Output() ${1:methodName} = new EventEmitter<${2:Class}>();$0"
+        ]
+    }
+}

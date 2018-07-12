@@ -1,0 +1,40 @@
+{
+    "http get": {
+        "prefix": "ng-http-get-v2",
+        "description": "Deprecated Http observable get request",
+        "types": "typescript, html",
+        "body": [
+            "this.http.get('${1:url}')",
+            "\t.map((res: Response) => {",
+            "\t\tres.json();",
+            "})$0"
+        ]
+    },
+    "httpClient get": {
+        "prefix": "ng-http-get",
+        "description": "HttpClient observable get request",
+        "types": "typescript, html",
+        "body": [
+            "this.http.get('${1:url}')$0"
+        ]
+    },
+    "http get post": {
+        "prefix": "ng-http-get-post",
+        "description": "Http observable get & post request",
+        "types": "typescript, html",
+        "body": [
+            "get${1:Type}(): Observable<Partial<${1:Type}>[]> {",
+            "\treturn this.http.get(${2:url})",
+            "}",
+            "",
+            "add${1:Type}(${3:name}: any): Observable<${1:Type}> {",
+            "\tlet body = JSON.stringify(${3:name});",
+            "\tlet headers = new Headers({ 'Content-Type': 'application/json'});",
+            "\tlet options = new RequestOptions({ headers: headers });",
+            "",
+            "\treturn this.http.post(${2:url}, body, options)",
+            "}",
+            "$0"
+        ]
+    }
+}

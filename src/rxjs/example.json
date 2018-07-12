@@ -1,0 +1,15 @@
+{
+    "RxJS MergeMap Example": {
+        "prefix": "rx-mergeMap-example",
+        "description": "RxJS MergeMap Example",
+        "types": "typescript, javascript",
+        "body": [
+            "getItems(ids: number[]): Observable<Item> {",
+            "\treturn from(ids).pipe(",
+            "\t\tmergeMap(id => <Observable<Item>> this.httpClient.get(`item/${1:id}`))",
+            "\t);",
+            "}",
+            "$0"
+        ]
+    },
+}

@@ -141,5 +141,21 @@
         "body": [
             "{{ ${1:observable} | async }}$0"
         ]
+    },
+    "Angular Debug": {
+        "prefix": "ng-debug",
+        "description": "pre obj pipe json",
+        "types": "typescript, html",
+        "body": [
+            "<pre>{{ ${1:obj} | json }}</pre>$0"
+        ]
+    },
+    "Angular Debug Async": {
+        "prefix": "ng-debug-async",
+        "description": "pre obj pipe async pipe json",
+        "types": "typescript, html",
+        "body": [
+            "<pre>{{ ${1:obj} | async | json }}</pre>$0"
+        ]
     }
 }

@@ -1,0 +1,10 @@
+{
+    "Angular Style": {
+        "prefix": "ng-style",
+        "description": "CSS style",
+        "types": "typescript, html",
+        "body": [
+            "[ngStyle]=\"{'${1:property}': ${2:expression}}\"$0"
+        ]
+    }
+}

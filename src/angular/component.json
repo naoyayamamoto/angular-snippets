@@ -104,5 +104,25 @@
             "}",
             "$0"
         ]
+    },
+    "Angular 1 Controller": {
+        "prefix": "ng-controller",
+        "description": "Use component instead.",
+        "types": "typescript",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "",
+            "@Component({",
+            "\tselector: '${selector}',",
+            "\ttemplateUrl: './${name}.component.html',",
+            "\tstyleUrls: ['./${name}.component.css']",
+            "})",
+            "export class ${Name}Component implements OnInit {",
+            "\tconstructor() { $1}",
+            "",
+            "\tngOnInit(): void { $2}",
+            "}",
+            "$0"
+        ]
     }
 }

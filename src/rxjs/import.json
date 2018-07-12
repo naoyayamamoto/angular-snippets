@@ -7,5 +7,23 @@
             "import { Subject } from 'rxjs';",
             "$0"
         ]
+    },
+    "RxJS Import Observable": {
+        "prefix": "rx-import-observable",
+        "description": "RxJS Import Observable",
+        "types": "typescript, javascript",
+        "body": [
+            "import { Observable } from 'rxjs';",
+            "$0"
+        ]
+    },
+    "RxJS Import an Operator": {
+        "prefix": "rx-import-operator",
+        "description": "RxJS Import Add Operator",
+        "types": "typescript, javascript",
+        "body": [
+            "import { ${1:switchMap} } from 'rxjs/operators';",
+            "$0"
+        ]
     }
 }

@@ -1,0 +1,31 @@
+{
+    "Material Basic Card": {
+        "prefix": "m-card",
+        "description": "Material Basic Card",
+        "types": "typescript, html",
+        "body": [
+            "<mat-card>",
+            "\t$1",
+            "</mat-card>$0"
+        ]
+    },
+    "Material Card": {
+        "prefix": "m-card-full",
+        "description": "Material Card",
+        "types": "typescript, html",
+        "body": [
+            "<mat-card>",
+            "\t<mat-card-header>",
+            "\t\t<mat-card-title>${1:title}</mat-card-title>",
+            "\t\t<mat-card-subtitle>${2:subtitle}</mat-card-subtitle>",
+            "\t</mat-card-header>",
+            "\t<mat-card-content>",
+            "\t$1",
+            "\t</mat-card-content>",
+            "\t<mat-card-actions>",
+            "\t\t<button mat-button>${3:Ok}</button>",
+            "\t</mat-card-actions>",
+            "</mat-card>$0"
+        ]
+    }
+}

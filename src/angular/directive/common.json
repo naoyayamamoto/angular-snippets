@@ -1,0 +1,100 @@
+{
+    "Angular Property": {
+        "prefix": "ng-property",
+        "description": "Property: [property]=\"expression\"",
+        "types": "typescript, html",
+        "body": [
+            "[${1:property}]=\"${2:expression}\"$0"
+        ]
+    },
+    "Angular Event": {
+        "prefix": "ng-event",
+        "description": "Event: (event) = \"expression()\"",
+        "types": "typescript, html",
+        "body": [
+            "(${1:event}) = \"${2:expression}()\"$0"
+        ]
+    },
+    "Angular Interpolation": {
+        "prefix": "ng-interpolation",
+        "description": "Interpolation: {{ interpolation }}",
+        "types": "typescript, html",
+        "body": [
+            "{{ ${1:interpolation} }}$0"
+        ]
+    },
+    "Angular Click Event": {
+        "prefix": "ng-click",
+        "description": "Click event",
+        "types": "typescript, html",
+        "body": [
+            "(click)=\"${1:expression}\"$0"
+        ]
+    },
+    "Angular 1 Show Directive": {
+        "prefix": "ng-show",
+        "description": "Usage: Bind to the hidden property.",
+        "types": "typescript, html",
+        "body": [
+            "[hidden]=\"!${1:expression}\"$0"
+        ]
+    },
+    "Angular 1 Hide Directive": {
+        "prefix": "ng-hide",
+        "description": "Usage: Bind to the hidden property.",
+        "types": "typescript, html",
+        "body": [
+            "[hidden]=\"${1:expression}\"$0"
+        ]
+    },
+    "Angular 1 Href Directive": {
+        "prefix": "ng-href",
+        "description": "Usage: Bind to the href property.",
+        "types": "typescript, html",
+        "body": [
+            "[href]=\"${1:url}\"$0"
+        ]
+    },
+    "Angular 1 Src Directive": {
+        "prefix": "ng-src",
+        "description": "Usage: Bind to the src property.",
+        "types": "typescript, html",
+        "body": [
+            "[src]=\"${1:url}\"$0"
+        ]
+    },
+    "Angular 1 OrderBy": {
+        "prefix": "ng-orderBy",
+        "description": "For performance reasons, no comparable pipe exists in Angular 2. Instead, use component code to order or sort results. If you need the same ordering or sorting code in several templates, consider building a custom pipe.",
+        "types": "typescript, html",
+        "body": [
+            "$0"
+        ]
+    },
+    "Angular 1 Filter": {
+        "prefix": "ng-filter",
+        "description": "For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe.",
+        "types": "typescript, html",
+        "body": [
+            "$0"
+        ]
+    },
+    "Submit Button": {
+        "prefix": "ng-button-submit",
+        "description": "A submit button element with a click event",
+        "types": "typescript, html",
+        "body": [
+            "<button type=\"submit\">${1:Submit}</button>",
+            "$0"
+        ]
+    },
+    "Click Button": {
+        "prefix": "ng-button",
+        "description": "A button element with a click event",
+        "types": "typescript, html",
+        "body": [
+            "<button (click)=\"${1:click()}\">${2:name}</button>",
+            "$0"
+        ]
+    }
+}

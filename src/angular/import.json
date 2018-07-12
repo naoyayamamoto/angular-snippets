@@ -1,0 +1,11 @@
+{
+    "Angular import": {
+        "prefix": "ng-import",
+        "description": "import module or component from path;",
+        "types": "typescript",
+        "body": [
+            "import { ${2:moduleOrComponent} } from '@angular/${1:path}';",
+            "$0"
+        ]
+    }
+}

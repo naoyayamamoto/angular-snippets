@@ -6,5 +6,45 @@
         "body": [
             "<button mat-icon-button>$1</button>$0"
         ]
-    }
+    },
+    "Material Button": {
+        "prefix": "m-button",
+        "description": "Rectangular Material button w/ no elevation.",
+        "types": "typescript, html",
+        "body": [
+            "<button mat-button>${1:text}</button>$0"
+        ]
+    },
+    "Material Raised Button": {
+        "prefix": "m-button-raised",
+        "description": "Rectangular Material button w/ elevation.",
+        "types": "typescript, html",
+        "body": [
+            "<button mat-raised-button>${1:text}</button>$0"
+        ]
+    },
+    "Material Round Button": {
+        "prefix": "m-button-fab",
+        "description": "Circular button w/ elevation.",
+        "types": "typescript, html",
+        "body": [
+            "<button mat-fab><mat-icon>${1:icon_name}</mat-icon></button>$0"
+        ]
+    },
+    "Material Round Small Button": {
+        "prefix": "m-button-fab-mini",
+        "description": "Small circular button w/ elevation.",
+        "types": "typescript, html",
+        "body": [
+            "<button mat-mini-fab><mat-icon>${1:icon_name}</mat-icon></button>$0"
+        ]
+    },
+    "Material Toggle Button": {
+        "prefix": "m-button-toggle",
+        "description": "Material toggle button",
+        "types": "typescript, html",
+        "body": [
+            "<mat-button-toggle>${1:text}</mat-button-toggle>$0"
+        ]
+    },
 }

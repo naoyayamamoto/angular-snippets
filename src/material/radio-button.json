@@ -1,0 +1,21 @@
+{
+    "Material Radio Button": {
+        "prefix": "m-radiobutton",
+        "description": "Material Radio Button",
+        "types": "typescript, html",
+        "body": [
+            "<mat-radio-group>",
+            "\t<mat-radio-button value=\"${1:value1}\">${2:Option1}</mat-radio-button>",
+            "\t<mat-radio-button value=\"${3:value2}\">${4:Option2}</mat-radio-button>",
+            "</mat-radio-group>$0"
+        ]
+    },
+    "Material Radio Button Option": {
+        "prefix": "m-radiobutton-option",
+        "description": "Material Radio Button Option",
+        "types": "typescript, html",
+        "body": [
+            "<mat-radio-button value=\"${1:value}\">${2:Option}</mat-radio-button>$0"
+        ]
+    }
+}
