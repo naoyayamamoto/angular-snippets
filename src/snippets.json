@@ -9,7 +9,7 @@
       "@Component({",
       "\tselector: '${1:app}-${2:name}',",
       "\ttemplateUrl: './${2:name}.component.html',",
-      "\tstyleUrls: ['./${2:name}.component.${3|scss,less,css|}']",
+      "\tstyleUrls: ['./${2:name}.component.${3:scss,less,css}']",
       "})",
       "export class ${4:Name}Component implements OnInit {",
       "\tconstructor($5) { }",
