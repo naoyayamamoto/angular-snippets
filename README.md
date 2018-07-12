@@ -17,12 +17,6 @@ All code snippets are based on and follow the Angular style guide https://angula
 | t- | Test Snippets |
 | pwa- | Progressive Web Applications Snippets |
 
-# Snippet Postfix
-
-| Postfix | Description |
-| ------- | ----------|
-| -cheatsheet | Cheat Sheet |
-
 # Important
 This extension is optimized for developers that use Angular and are no longer using AngularJS (Angular 1).
 If you type in AngularJS keywords, it will suggest an Angular solutions.
