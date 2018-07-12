@@ -1,0 +1,22 @@
+{
+    "Angular Component": {
+        "prefix": "ng-component",
+        "description": "Component with template and style urls",
+        "types": "typescript",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "",
+            "@Component({",
+            "\tselector: '${1:app}-${2:name}',",
+            "\ttemplateUrl: './${2:name}.component.html',",
+            "\tstyleUrls: ['./${2:name}.component.${3:scss,less,css}']",
+            "})",
+            "export class ${4:Name}Component implements OnInit {",
+            "\tconstructor($5) { }",
+            "",
+            "\tngOnInit(): void {${6: }}",
+            "}",
+            "$7"
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "Material Menu": {
+        "prefix": "m-menu",
+        "description": "Material Menu",
+        "types": "typescript, html",
+        "body": [
+            "<mat-menu #${1:appMenu}=\"matMenu\">",
+            "\t$2",
+            "</mat-menu>"
+        ]
+    },
+    "Material Menu Trigger For": {
+        "prefix": "m-menu-trigger-for",
+        "description": "Material Menu Trigger For",
+        "types": "typescript, html",
+        "body": [
+            "[matMenuTriggerFor]=\"${1:appMenu}\""
+        ]
+    },
+    "Material Menu Overlap Trigger": {
+        "prefix": "m-menu-overlap-trigger",
+        "description": "Material Menu Overlap Trigger",
+        "types": "typescript, html",
+        "body": [
+            "[overlapTrigger]=\"${1:false}\""
+        ]
+    },
+    "Material Menu Item": {
+        "prefix": "m-menu-item",
+        "description": "Material Menu Item",
+        "types": "typescript, html",
+        "body": [
+            "mat-menu-item"
+        ]
+    },
+    "Material Menu Item Button": {
+        "prefix": "m-menu-item-button",
+        "description": "Material Menu Item Button",
+        "types": "typescript, html",
+        "body": [
+            "<button mat-menu-item>$1</button>"
+        ]
+    }
+}

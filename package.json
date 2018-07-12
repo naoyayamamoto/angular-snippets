@@ -47,8 +47,8 @@
     ]
   },
   "scripts": {
-    "prebuild": "cat src/{snippets,atom/rxjs,atom/angular}.json | jq -s 'add' > dist/snippets.json",
-    "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count; npm run countTS; npm run countHTML; npm run countJS; npm run countJson",
+    "prebuild": "find src -name '*.json' -exec cat {} \\; | jq -s 'add' > dist/snippets.json",
+    "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count;",
     "build_snippets": "npm run build_html; npm run build_typescript; npm run build_javascript; npm run build_json",
     "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
     "build_html": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"html\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".text.html\": .}' > snippets/html.json",
@@ -59,10 +59,6 @@
     "dup_snippet": "cat dist/snippets.json | grep '\": {' | sort | uniq -d",
     "dup_name": "cat dist/snippets.json | grep 'prefix' | sort | uniq -d",
     "dups": "npm run dup_snippet; npm run dup_name",
-    "count": "cat dist/snippets.json | grep 'prefix' | wc -l",
-    "countTS": "cat snippets/typescript.json | grep 'prefix' | wc",
-    "countHTML": "cat snippets/html.json | grep 'prefix' | wc",
-    "countJS": "cat snippets/javascript.json | grep 'prefix' | wc",
-    "countJson": "cat snippets/json.json | grep 'prefix' | wc"
+    "count": "cat dist/snippets.json | grep 'prefix' | wc -l"
   }
 }

@@ -2308,15 +2308,6 @@
       "$0"
     ]
   },
-  "RxJS Import Subject": {
-    "prefix": "rx-import-observable",
-    "description": "RxJS Import Subject",
-    "types": "typescript, javascript",
-    "body": [
-      "import { Subject } from 'rxjs';",
-      "$0"
-    ]
-  },
   "RxJS Import an Operator": {
     "prefix": "rx-import-operator",
     "description": "RxJS Import Add Operator",
