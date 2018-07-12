@@ -14,7 +14,7 @@
         "description": "Material Menu Trigger For",
         "types": "typescript, html",
         "body": [
-            "[matMenuTriggerFor]=\"${1:appMenu}\""
+            "[matMenuTriggerFor]=\"${1:appMenu}\"$2"
         ]
     },
     "Material Menu Overlap Trigger": {
@@ -22,7 +22,7 @@
         "description": "Material Menu Overlap Trigger",
         "types": "typescript, html",
         "body": [
-            "[overlapTrigger]=\"${1:false}\""
+            "[overlapTrigger]=\"${1:false}\"$2"
         ]
     },
     "Material Menu Item": {
