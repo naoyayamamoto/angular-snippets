@@ -13,7 +13,7 @@
     "url": "https://github.com/naoyayamamoto/angular-snippets/issues"
   },
   "homepage": "https://github.com/naoyayamamoto/angular-snippets#readme",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
