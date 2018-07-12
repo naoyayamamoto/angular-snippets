@@ -1,0 +1,14 @@
+{
+    "Angular Service": {
+        "prefix": "ng-service",
+        "description": "Basic service",
+        "types": "typescript",
+        "body": [
+            "import { Injectable } from '@angular/core';",
+            "",
+            "@Injectable()",
+            "export class ${Name}Service {",
+            "$0}"
+        ]
+    }
+}

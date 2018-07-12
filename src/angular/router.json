@@ -1,0 +1,123 @@
+{
+    "Angular Routing": {
+        "prefix": "ng-router",
+        "description": "Router template",
+        "types": "typescript",
+        "body": [
+            "import { Routes, RouterModule } from '@angular/router';",
+            "import { NgModule } from '@angular/core';",
+            "",
+            "import { ${1:Home}Component } from './';",
+            "import { ${2:Name2}Component } from './';",
+            "import { ${3:Name3}Component } from './';",
+            "import { ${4:Name4}Component } from './';",
+            "import { PageNotFoundComponent } from './';",
+            "",
+            "const routes: Routes = [",
+            "\t{ path: '', component: ${1:Home}Component },",
+            "\t{ path: '${5:path2}', component: ${2:Name2}Component },",
+            "\t{ path: '${6:path3}', component: ${3:Name3}Component },",
+            "\t{ path: '${7:path4}', component: ${4:Name4}Component },",
+            "\t{ path: '**', component: PageNotFoundComponent },",
+            "",
+            "\t//{ path: 'path/:routeParam', component: MyComponent },",
+            "\t//{ path: 'staticPath', component: ... },",
+            "\t//{ path: '**', component: ... },",
+            "\t//{ path: 'oldPath', redirectTo: '/staticPath' },",
+            "\t//{ path: ..., component: ..., data: { message: 'Custom' }",
+            "];",
+            "",
+            "@NgModule({",
+            "\timports: [RouterModule.forChild(routes)],",
+            "\texports: [RouterModule]",
+            "})",
+            "export class ${8:Feature}RoutingModule {}",
+            "$0"
+        ]
+    },
+    "Angular App Module Routes": {
+        "prefix": "ng-router-appmodule",
+        "description": "Routes to include in root module",
+        "types": "typescript",
+        "body": [
+            "import { NgModule } from '@angular/core';",
+            "import { RouterModule, Routes } from '@angular/router';",
+            "",
+            "const routes: Routes = [",
+            "\t{ path: '', component: ${1:Home}Component },",
+            "\t{ path: '${2:path}', component: ${3:Feature}Component },",
+            "\t{ path: '**', component: PageNotFoundComponent },",
+            "];",
+            "",
+            "@NgModule({",
+            "\timports: [RouterModule.forRoot(routes)],",
+            "\texports: [RouterModule]",
+            "})",
+            "export class AppRoutingModule {}",
+            "$0"
+        ]
+    },
+    "Angular Feature Module Routes": {
+        "prefix": "ng-router-featuremodule",
+        "description": "Routes to include in a feature module",
+        "types": "typescript",
+        "body": [
+            "import { NgModule } from '@angular/core';",
+            "import { RouterModule, Routes } from '@angular/router';",
+            "import { CommonModule } from '@angular/common';",
+            "",
+            "const routes: Routes = [",
+            "\t{ path: '${1:path}', component: ${2:Feature}Component }",
+            "];",
+            "",
+            "@NgModule({",
+            "\timports: [CommonModule, RouterModule.forChild(routes)],",
+            "\texports: [RouterModule]",
+            "})",
+            "export class ${3:Feature}RoutingModule {}",
+            "$0"
+        ]
+    },
+    "Angular Router Link": {
+        "prefix": "ng-router-link",
+        "description": "Router link",
+        "types": "typescript, html",
+        "body": [
+            "<a [routerLink]=\"[ '/${1:path}', ${2:routeParam} ]\">${3:name}</a>$0"
+        ]
+    },
+    "Angular Router Attribute": {
+        "prefix": "ng-router-attribute",
+        "description": "Router link",
+        "types": "typescript, html",
+        "body": [
+            "[routerLink]=\"[ '/${1:path}', ${2:routeParam} ]\"$0"
+        ]
+    },
+    "Angular Router Active Link": {
+        "prefix": "ng-router-linkActive",
+        "description": "Router active link",
+        "types": "typescript, html",
+        "body": [
+            "<a [routerLink]=\"[ '/${1:path}' ]\" routerLinkActive=\"active\">${2:name}</a>$0"
+        ]
+    },
+    "Angular Router Outlet": {
+        "prefix": "ng-router-outlet",
+        "description": "Router outlet element",
+        "types": "typescript, html",
+        "body": [
+            "<router-outlet></router-outlet>",
+            "$0"
+        ]
+    },
+    "Angular Router Outlet Name": {
+        "prefix": "ng-router-outlet-name",
+        "description": "Router outlet element with name",
+        "types": "typescript, html",
+        "body": [
+            "<router-outlet name=\"${1:name}\"></router-outlet>",
+            "$0"
+        ]
+    }
+}

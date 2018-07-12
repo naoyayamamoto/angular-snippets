@@ -1,0 +1,78 @@
+{
+    "Angular Directive": {
+        "prefix": "ng-directive",
+        "description": "Directive template",
+        "types": "typescript",
+        "body": [
+            "import { Directive } from '@angular/core';",
+            "",
+            "@Directive({",
+            "\tselector: '${1:selector}',",
+            "})",
+            "export class ${2:Name}Directive {${3: }}$0"
+        ]
+    },
+    "Angular CSS Directive": {
+        "prefix": "ng-directive-css",
+        "description": "CSS directive",
+        "types": "typescript",
+        "body": [
+            "import { Directive, ElementRef, Input } from '@angular/core';",
+            "",
+            "@Directive({",
+            "\tselector: '[${1:selector}]',",
+            "})",
+            "export class ${2:Name}Directive {",
+            "\tconstructor(private elementRef: ElementRef) {}",
+            "",
+            "\tprivate ${3:name}(${4:value}: string) {",
+            "\t\tthis.elementRef.nativeElement.style.${5:proptery} = ${6:value};",
+            "\t}",
+            "}$0"
+        ]
+    },
+    "Angular Attribute Directive": {
+        "prefix": "ng-directive-attribute",
+        "description": "Attribute directive",
+        "types": "typescript",
+        "body": [
+            "import { Directive } from '@angular/core';",
+            "",
+            "@Directive({",
+            "\tselector: '[${1:app}${2:Name}]',",
+            "})",
+            "export class ${2:Name}Directive {${4: }}$0"
+        ]
+    },
+    "Angular Validator": {
+        "prefix": "ng-validator",
+        "description": "Angular validator snippet",
+        "types": "typescript",
+        "body": [
+            "import { Directive } from '@angular/core';",
+            "import { Validator, NG_VALIDATORS, FormControl } from '@angular/forms';",
+            "",
+            "@Directive({",
+            "\tselector: '[${1:validatorName}][ngModel]',",
+            "\tproviders: [",
+            "\t\t{ provide: NG_VALIDATORS, useExisting: ${2:class}Directive, multi: true }",
+            "\t]",
+            "})",
+            "",
+            "export class ${2:class}Directive implements Validator {",
+            "\tvalidate(c: FormControl): { [key: string]: any } {",
+            "\t\tif (valid) {",
+            "\t\t\treturn null;",
+            "\t\t}",
+            "",
+            "\t\treturn {",
+            "\t\t\t${1:validatorName}: {",
+            "\t\t\t\tvalid: false",
+            "\t\t\t}",
+            "\t\t};",
+            "\t}",
+            "}",
+            "$0"
+        ]
+    }
+}
