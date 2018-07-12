@@ -238,7 +238,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | rx-import-observable | RxJS Import Observable |
 | rx-import-operator | RxJS Import Add Operator |
 | rx-import-subject | RxJS Import Subject |
-| rx-mergeMap | RxJS MergeMap Example |
+| rx-mergeMap-example | RxJS MergeMap Example |
 | sw-register | Register Service Worker |
 | sw-register-and-check | Register Service Worker and Check |
 | t-describe-it | Describe, It & Expect Example |
