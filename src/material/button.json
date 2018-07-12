@@ -1,0 +1,10 @@
+{
+    "Material Icon Button": {
+        "prefix": "m-button-icon",
+        "description": "Circular Material button with a transparent background",
+        "types": "typescript, html",
+        "body": [
+            "<button mat-icon-button>$1</button>$2"
+        ]
+    }
+}

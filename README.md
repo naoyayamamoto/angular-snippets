@@ -243,9 +243,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | t-describe-it | Describe, It & Expect Example |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 
-## Feedback
-
-Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create an issue on GitHub.
 
 ## Open Source
 

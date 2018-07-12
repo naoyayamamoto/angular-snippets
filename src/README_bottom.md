@@ -1,7 +1,4 @@
 
-## Feedback
-
-Please send any feedback or suggestions to @Mike_BeastCode (Twitter) or create an issue on GitHub.
 
 ## Open Source
 

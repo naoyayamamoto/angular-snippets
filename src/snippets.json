@@ -1792,14 +1792,6 @@
       "<button mat-raised-button>${text}</button>$0"
     ]
   },
-  "Material Icon Button": {
-    "prefix": "m-button-icon",
-    "description": "Circular Material button with a transparent background",
-    "types": "typescript, html",
-    "body": [
-      "<button mat-icon-button>%{text}</button>$0"
-    ]
-  },
   "Material Round Button": {
     "prefix": "m-button-fab",
     "description": "Circular button w/ elevation.",
