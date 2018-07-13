@@ -53,6 +53,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
+|       "\t\t\t<mat-panel-> |       "\t\t\t</mat-panel-> |
 | cli-cheatsheet | Cli Cheat Sheet |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
@@ -68,6 +69,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | fx-layout-gap | Flex Layout Gap Property |
 | fx-row | Flex Layout Row |
 | fx-row-reverse | Flex Layout Reverse Row |
+| m-accordion | Material Accordion |
+| m-action-row | Material Expansion Panel Action Row |
 | m-button | Rectangular Material button w/ no elevation. |
 | m-button-fab | Circular button w/ elevation. |
 | m-button-fab-mini | Small circular button w/ elevation. |

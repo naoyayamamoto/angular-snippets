@@ -1,4 +1,24 @@
 {
+    "Material Accordion": {
+        "prefix": "m-accordion",
+        "description": "Material Accordion",
+        "types": "typescript, html",
+        "body": [
+            "<mat-accordion>",
+            "\t<mat-expansion-panel>",
+            "\t\t<mat-expansion-panel-header>",
+            "\t\t\t<mat-panel-title>",
+            "\t\t\t\t$1",
+            "\t\t\t</mat-panel-title>",
+            "\t\t\t<mat-panel-description>",
+            "\t\t\t\t$2",
+            "\t\t\t</mat-panel-description>",
+            "\t\t</mat-expansion-panel-header>",
+            "\t\t$3",
+            "\t</mat-expansion-panel>",
+            "</mat-accordion>$0"
+        ]
+    },
     "Material Expansion Panel": {
         "prefix": "m-expansion-panel",
         "description": "Material Expansion Panel",
@@ -10,6 +30,16 @@
             "\t</mat-expansion-panel-header>",
             "\t${2:content}",
             "</mat-expansion-panel>$0"
+        ]
+    },
+    "Material Expansion Panel Action Row": {
+        "prefix": "m-action-row",
+        "description": "Material Expansion Panel Action Row",
+        "types": "typescript, html",
+        "body": [
+            "<mat-action-row>",
+            "\t$1",
+            "</mat-action-row>$0"
         ]
     }
 }
