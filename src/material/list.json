@@ -5,7 +5,7 @@
         "types": "typescript, html",
         "body": [
             "<mat-list>",
-            "\t<mat-list-item>${1:item}</mat-list-item>$1",
+            "\t<mat-list-item>${1:item}</mat-list-item>$2",
             "</mat-list>$0"
         ]
     },
