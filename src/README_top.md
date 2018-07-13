@@ -1,3 +1,8 @@
+[![apm](https://img.shields.io/apm/v/angular-snippets.svg)](https://atom.io/packages/angular-snippets)
+[![apm](https://img.shields.io/apm/dm/angular-snippets.svg)](https://atom.io/packages/angular-snippets)
+[![apm](https://img.shields.io/apm/l/angular-snippets.svg)](https://atom.io/packages/angular-snippets)
+
+
 # Atom Angular TypeScript & Html Snippets
 Atom TypeScript and Html snippets and code examples for Angular 2,4,5 & 6.
 
