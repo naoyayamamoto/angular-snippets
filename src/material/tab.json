@@ -1,0 +1,21 @@
+{
+    "Material Tab Group": {
+        "prefix": "m-tab-group",
+        "description": "Material Tab Group",
+        "types": "typescript, html",
+        "body": [
+            "<mat-tab-group>",
+            "\t<mat-tab label=\"${1:TabHeader1}\">$2</mat-tab>",
+            "\t<mat-tab label=\"${3:TabTabHeader2}\">$4</mat-tab>",
+            "</mat-tab-group>$0"
+        ]
+    },
+    "Material Tab": {
+        "prefix": "m-tab",
+        "description": "Material Tab",
+        "types": "typescript, html",
+        "body": [
+            "<mat-tab label=\"${1:TabHeader}\">$2</mat-tab>$0"
+        ]
+    }
+}

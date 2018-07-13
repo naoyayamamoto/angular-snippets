@@ -1,0 +1,17 @@
+{
+    "Material Grid List": {
+        "prefix": "m-grid-list",
+        "description": "Material Grid List",
+        "types": "typescript, html",
+        "body": [
+            "<mat-grid-list cols=\"${1:cols}\" rowHeight=\"${2:height}px\">",
+            "\t<mat-grid-tile",
+            "\t\t*ngFor=\"let ${3:tile} of ${4:tiles}\"",
+            "\t\t[colspan]=\"${3:tile}.cols\"",
+            "\t\t[rowspan]=\"${3:tile}.rows\"",
+            "\t\t{{${3:tile}.text}}",
+            "\t</mat-grid-tile>",
+            "</mat-grid-list>$0"
+        ]
+    }
+}

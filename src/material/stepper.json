@@ -1,0 +1,43 @@
+{
+    "Material Vertical Stepper": {
+        "prefix": "m-stepper-vertical",
+        "description": "Material Vertical Stepper",
+        "types": "typescript, html",
+        "body": [
+            "<mat-vertical-stepper>",
+            "\t<mat-step label=\"${1:label1}\">",
+            "\t\t$2",
+            "\t</mat-step>",
+            "\t<mat-step label=\"${3:label2}\">",
+            "\t\t$4",
+            "\t</mat-step>",
+            "</mat-vertical-stepper>$0"
+        ]
+    },
+    "Material Horizontal Stepper": {
+        "prefix": "m-stepper-horizontal",
+        "description": "Material Horizontal Stepper",
+        "types": "typescript, html",
+        "body": [
+            "<mat-horizontal-stepper>",
+            "\t<mat-step label=\"${1:label1}\">",
+            "\t\t$2",
+            "\t</mat-step>",
+            "\t<mat-step label=\"${3:label2}\">",
+            "\t\t$4",
+            "\t</mat-step>",
+            "</mat-horizontal-stepper>$0"
+        ]
+    },
+    "Material Stepper Step": {
+        "prefix": "m-step",
+        "description": "Material Vertical Stepper",
+        "types": "typescript, html",
+        "body": [
+            "<mat-step label=\"${1:label}\">",
+            "\t$2",
+            "</mat-step>",
+            "$0"
+        ]
+    }
+}

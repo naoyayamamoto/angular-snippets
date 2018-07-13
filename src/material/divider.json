@@ -1,0 +1,26 @@
+{
+    "Material Divider": {
+        "prefix": "m-divider",
+        "description": "Material Divider",
+        "types": "typescript, html",
+        "body": [
+            "<mat-divider></mat-divider>$0"
+        ]
+    },
+    "Material Inset Divider": {
+        "prefix": "m-divider-inset",
+        "description": "Material Inset Divider",
+        "types": "typescript, html",
+        "body": [
+            "<mat-divider [inset]=\"true\"></mat-divider>$0"
+        ]
+    },
+    "Material Vertical Divider": {
+        "prefix": "m-divider-vertical",
+        "description": "Material Vertical Divider",
+        "types": "typescript, html",
+        "body": [
+            "<mat-divider [vertical]=\"true\"></mat-divider>$0"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "Material Slide Toggle": {
+        "prefix": "m-slide-toggle",
+        "description": "Material Slide toggle",
+        "types": "typescript, html",
+        "body": [
+            "<mat-slide-toggle>${1:text}</mat-slide-toggle>$0"
+        ]
+    }
+}

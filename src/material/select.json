@@ -1,0 +1,14 @@
+{
+    "Material Select": {
+        "prefix": "m-select",
+        "description": "Material Select",
+        "types": "typescript, html",
+        "body": [
+            "<mat-select placeholder=\"${1:Placeholder}\" [(ngModel)]=\"selectedValue\" name=\"${2:item}\">",
+            "\t<mat-option *ngFor=\"let ${3:item} of ${4:items}\" [value]=\"${3:item}.value\">",
+            "\t\t{{${3:item}.viewValue}}",
+            "\t</mat-option>",
+            "</mat-select>$0"
+        ]
+    }
+}

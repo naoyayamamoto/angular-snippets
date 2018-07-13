@@ -1,0 +1,46 @@
+{
+    "Material Indeterminate Progress Bar": {
+        "prefix": "m-progress-bar-indeterminate",
+        "description": "Material indeterminate Progress Bar",
+        "types": "typescript, html",
+        "body": [
+            "<mat-progress-bar",
+            "\tmode=\"indeterminate\"",
+            "</mat-progress-bar>$0"
+        ]
+    },
+    "Material Query Progress Bar": {
+        "prefix": "m-progress-bar-query",
+        "description": "Material Query Progress Bar",
+        "types": "typescript, html",
+        "body": [
+            "<mat-progress-bar",
+            "\tmode=\"query\"",
+            "</mat-progress-bar>$0"
+        ]
+    },
+    "Material Buffer Progress Bar": {
+        "prefix": "m-progress-bar-buffer",
+        "description": "Material Buffer Progress Bar",
+        "types": "typescript, html",
+        "body": [
+            "<mat-progress-bar",
+            "\tmode=\"buffer\"",
+            "\t[color]=\"${1:color}\"",
+            "\t[value]=\"${2:value}\"",
+            "\t[bufferValue]=\"${3:bufferValue}\"",
+            "</mat-progress-bar>$0"
+        ]
+    },
+    "Material Determinate Progress Bar": {
+        "prefix": "m-progress-bar",
+        "description": "Material Determinate Progress Bar",
+        "types": "typescript, html",
+        "body": [
+            "<mat-progress-bar",
+            "\tmode=\"determinate\"",
+            "\t[value]=\"${1:value}\">",
+            "</mat-progress-bar>$0"
+        ]
+    }
+}
