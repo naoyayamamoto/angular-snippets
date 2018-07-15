@@ -30,22 +30,6 @@
   "activationCommands": {
     "atom-workspace": "angular-snippets:toggle"
   },
-  "contributes": {
-    "snippets": [
-      {
-        "language": "html",
-        "path": "./snippets/html.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/typescript.json"
-      },
-      {
-        "language": "json",
-        "path": "./snippets/json.json"
-      }
-    ]
-  },
   "scripts": {
     "prebuild": "find src -name '*.json' -exec cat {} \\; | jq -s 'add' > dist/snippets.json",
     "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count;",
@@ -55,7 +39,7 @@
     "build_typescript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"typescript\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.ts\": .}' > snippets/typescript.json",
     "build_javascript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"javascript\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.js\": .}' > snippets/javascript.json",
     "build_json": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"json\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.json\": .}' > snippets/json.json",
-    "generate_readme_table": "cat dist/snippets.json | grep 'prefix\\|description' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sed -e 's/$/ |/g' | sed -e 's/^/| /' | sort  >> README.md",
+    "generate_readme_table": "cat dist/snippets.json | grep '\"prefix\"\\|\"description\"' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sed -e 's/$/ |/g' | sed -e 's/^/| /' | sort  >> README.md",
     "dup_snippet": "cat dist/snippets.json | grep '\": {' | sort | uniq -d",
     "dup_name": "cat dist/snippets.json | grep 'prefix' | sort | uniq -d",
     "dups": "npm run dup_snippet; npm run dup_name",

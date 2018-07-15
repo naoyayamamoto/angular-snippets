@@ -53,7 +53,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 
 | Snippet | Description |
 | ------- | ----------|
-|       "\t\t\t<mat-panel-> |       "\t\t\t</mat-panel-> |
 | cli-cheatsheet | Cli Cheat Sheet |
 | fx-col | Flex Layout Column |
 | fx-col-element | Flex Layout Column with Element |
