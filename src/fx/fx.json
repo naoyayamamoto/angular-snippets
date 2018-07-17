@@ -56,7 +56,7 @@
         "description": "Flex Layout Column",
         "types": "typescript, html",
         "body": [
-            "fxLayout=\"column\" fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\" fxLayoutGap=\"${3:gap}px\">$0"
+            "fxLayout=\"column\" fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\" fxLayoutGap=\"${3:gap}px\"$0"
         ]
     },
     "Angular Flex Column with Element": {
