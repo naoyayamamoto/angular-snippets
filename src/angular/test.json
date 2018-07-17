@@ -11,7 +11,7 @@
             "\t${2:className}El  = fixture.debugElement.query(By.css('.${2:className}')); // find the element",
             "",
             "\t// pretend that it was wired to something that supplied a ${2:className}",
-            "\texpected${ClassName} = new ${3:ClassName}($4);",
+            "\texpected${3:ClassName} = new ${3:ClassName}($4);",
             "\tcomp.${2:className} = expected${3:ClassName};",
             "\tfixture.detectChanges(); // trigger initial data binding",
             "});$0"

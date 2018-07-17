@@ -4,7 +4,7 @@
         "description": "Property: [property]=\"expression\"",
         "types": "typescript, html",
         "body": [
-            "[${property}]=\"${expression}\"$0"
+            "[${1:property}]=\"${2:expression}\"$0"
         ]
     },
     "Angular Twoway Binding": {
@@ -12,7 +12,7 @@
         "description": "Two-way data binding with the NgModel",
         "types": "typescript, html",
         "body": [
-            "[(ngModel)]=\"${Name}\"$0"
+            "[(ngModel)]=\"${1:Name}\"$0"
         ]
     },
     "Angular Model Binding": {
@@ -20,7 +20,7 @@
         "description": "Two-way data binding with the NgModel",
         "types": "typescript, html",
         "body": [
-            "[(ngModel)]=\"${Name}\"$0"
+            "[(ngModel)]=\"${1:Name}\"$0"
         ]
     }
 }

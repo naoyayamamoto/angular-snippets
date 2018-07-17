@@ -84,7 +84,7 @@
         "description": "Flex Layout Item",
         "types": "typescript, html",
         "body": [
-            "<div fxFlex=\"${value}%\">",
+            "<div fxFlex=\"${1:value}\">",
             "\t$0",
             "</div>"
         ]
@@ -94,7 +94,7 @@
         "description": "Flex Layout Item with fxFlexOffset",
         "types": "typescript, html",
         "body": [
-            "<div fxFlex=\"${value}%\" fxFlexOffset=\"${offset}px\">",
+            "<div fxFlex=\"${1:value}\" fxFlexOffset=\"${2:offset}px\">",
             "\t$0",
             "</div>"
         ]
@@ -104,7 +104,7 @@
         "description": "Flex Layout Item with fxFlexOrder",
         "types": "typescript, html",
         "body": [
-            "<div fxFlex=\"${value}%\" fxFlexOrder=\"${order}\">",
+            "<div fxFlex=\"${1:value}\" fxFlexOrder=\"${2:order}\">",
             "\t$0",
             "</div>"
         ]
@@ -114,7 +114,7 @@
         "description": "Flex Layout Item with fxFlexAlign",
         "types": "typescript, html",
         "body": [
-            "<div fxFlex=\"${value}%\" fxFlexAlign=\"${1|start,baseline,center,end|}\">",
+            "<div fxFlex=\"${1:value}\" fxFlexAlign=\"${2:start,baseline,center,end}\">",
             "\t$0",
             "</div>"
         ]
@@ -124,7 +124,7 @@
         "description": "Flex Layout Item with fxFlexFill",
         "types": "typescript, html",
         "body": [
-            "<div fxFlex=\"${value}%\" fxFlexFill>",
+            "<div fxFlex=\"${1:value}\" fxFlexFill>",
             "\t$0",
             "</div>"
         ]

@@ -7,7 +7,7 @@
             "import { Injectable } from '@angular/core';",
             "",
             "@Injectable()",
-            "export class ${Name}Service {",
+            "export class ${1:Name}Service {",
             "$0}"
         ]
     }

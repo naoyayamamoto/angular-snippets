@@ -67,7 +67,7 @@
             " * For each action type in an action group, make a simple",
             " * enum object for all of this group's action types.",
             " */",
-            "export enum ${Class}ActionTypes {",
+            "export enum ${2:Class}ActionTypes {",
             "\t${1:Verb1} = '[${2:Class}] ${1:Verb1}',",
             "\t${3:Verb2} = '[${2:Class}] ${3:Verb2}'",
             "};",
@@ -274,7 +274,7 @@
             "import { NgxsModule } from '@ngxs/store';",
             "import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';",
             "import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';",
-            "import { ${Name}State } from './${1:path}/${2:name}.state';",
+            "import { ${1:Name}State } from './${2:path}/${3:name}.state';",
             "$0"
         ]
     },
@@ -289,7 +289,7 @@
             "import { ${3:action} } from './${3:action}.actions';",
             "",
             "@Component({ ... })",
-            "export class ${Name}Component {",
+            "export class ${1:Name}Component {",
             " // Reads the name of the store from the store class",
             " @Select(${1:Name}State) ${3:action}$: Observable<${4:type}>;",
             "}",
