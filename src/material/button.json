@@ -4,7 +4,9 @@
         "description": "Circular Material button with a transparent background",
         "types": "typescript, html",
         "body": [
-            "<button mat-icon-button>$1</button>$0"
+            "<button mat-icon-button>",
+            "\t<mat-icon>$1</mat-icon>",
+            "</button>$0"
         ]
     },
     "Material Button": {
