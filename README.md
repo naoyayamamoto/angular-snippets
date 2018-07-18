@@ -55,8 +55,8 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ------- | ----------|
 | cli-cheatsheet | Cli Cheat Sheet |
 | fx-col | Flex Layout Column |
-| fx-col-element | Flex Layout Column with Element |
-| fx-col-reverse | Flex Layout Reverse Column |
+| fx-col-reverse | Flex Layout Column |
+| fx-full-layout-element | Flex Full Layout Element |
 | fx-import | Flex Layout Import |
 | fx-item | Flex Layout Item |
 | fx-item-align | Flex Layout Item with fxFlexAlign |
@@ -65,6 +65,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | fx-item-order | Flex Layout Item with fxFlexOrder |
 | fx-layout | Flex Layout Property |
 | fx-layout-align | Flex Layout Align Property |
+| fx-layout-align-center | Flex Layout Align Center |
 | fx-layout-gap | Flex Layout Gap Property |
 | fx-row | Flex Layout Row |
 | fx-row-reverse | Flex Layout Reverse Row |

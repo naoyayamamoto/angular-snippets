@@ -7,14 +7,14 @@
             "import { FlexLayoutModule } from '@angular/flex-layout';"
         ]
     },
-    "Angular Flex Row": {
-        "prefix": "fx-row",
-        "description": "Flex Layout Row",
+    "Angular Flex Full Layout Element": {
+        "prefix": "fx-full-layout-element",
+        "description": "Flex Full Layout Element",
         "types": "typescript, html",
         "body": [
-            "<div fxLayout=\"row\" fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\" fxLayoutGap=\"${3:gap}px\">",
+            "<${1:div} fxLayout=\"${2:row,column,row-reverse,column-reverse}\" fxLayoutAlign=\"${3:start,center,end,space-around,space-between} ${4:start,center,end,stretch}\" fxLayoutGap=\"${5:gap}px\">",
             "\t$0",
-            "</div>"
+            "</${1:div}>"
         ]
     },
     "Angular Flex Layout": {
@@ -22,7 +22,7 @@
         "description": "Flex Layout Property",
         "types": "typescript, html",
         "body": [
-            "fxLayout=\"row\"$0"
+            "fxLayout=\"${1:row,column,row-reverse,column-reverse}\"$0"
         ]
     },
     "Angular Flex Layout Align": {
@@ -33,6 +33,14 @@
             "fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\"$0"
         ]
     },
+    "Angular Flex Layout Align Center": {
+        "prefix": "fx-layout-align-center",
+        "description": "Flex Layout Align Center",
+        "types": "typescript, html",
+        "body": [
+            "fxLayoutAlign=\"center center\"$0"
+        ]
+    },
     "Angular Flex Layout Gap": {
         "prefix": "fx-layout-gap",
         "description": "Flex Layout Gap Property",
@@ -41,14 +49,20 @@
             "fxLayoutGap=\"${1:gap}px\"$0"
         ]
     },
+    "Angular Flex Row": {
+        "prefix": "fx-row",
+        "description": "Flex Layout Row",
+        "types": "typescript, html",
+        "body": [
+            "fxLayout=\"row\"$0"
+        ]
+    },
     "Angular Flex Reverse Row": {
         "prefix": "fx-row-reverse",
         "description": "Flex Layout Reverse Row",
         "types": "typescript, html",
         "body": [
-            "<div fxLayout=\"row-reverse\" fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\" fxLayoutGap=\"${3:gap}px\">",
-            "\t$0",
-            "</div>"
+            "fxLayout=\"row-reverse\"$0"
         ]
     },
     "Angular Flex Column": {
@@ -56,27 +70,15 @@
         "description": "Flex Layout Column",
         "types": "typescript, html",
         "body": [
-            "fxLayout=\"column\" fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\" fxLayoutGap=\"${3:gap}px\"$0"
-        ]
-    },
-    "Angular Flex Column with Element": {
-        "prefix": "fx-col-element",
-        "description": "Flex Layout Column with Element",
-        "types": "typescript, html",
-        "body": [
-            "<${1:div} fxLayout=\"column\" fxLayoutAlign=\"${2:start,center,end,space-around,space-between} ${3:start,center,end,stretch}\" fxLayoutGap=\"${4:gap}px\">",
-            "\t$0",
-            "</${1:div}>"
+            "fxLayout=\"column\"$0"
         ]
     },
     "Angular Flex Reverse Column": {
         "prefix": "fx-col-reverse",
-        "description": "Flex Layout Reverse Column",
+        "description": "Flex Layout Column",
         "types": "typescript, html",
         "body": [
-            "<div fxLayout=\"column-reverse\" fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\" fxLayoutGap=\"${3:gap}px\">",
-            "\t$0",
-            "</div>"
+            "fxLayout=\"column-reverse\"$0"
         ]
     },
     "Angular Flex Item": {
@@ -84,9 +86,7 @@
         "description": "Flex Layout Item",
         "types": "typescript, html",
         "body": [
-            "<div fxFlex=\"${1:value}\">",
-            "\t$0",
-            "</div>"
+            "fxFlex=\"${1:grow} ${2:shrink} ${3:basis}\"$0"
         ]
     },
     "Angular Flex Item Offset": {
