@@ -89,6 +89,16 @@
             "fxFlex=\"${1:grow} ${2:shrink} ${3:basis}\"$0"
         ]
     },
+    "Angular Flex Item Element": {
+        "prefix": "fx-item-element",
+        "description": "Flex Layout Item Element",
+        "types": "typescript, html",
+        "body": [
+            "<${1:div} fxFlex=\"${2:grow} ${3:shrink} ${4:basis}\">",
+            "\t$0",
+            "</${1:div}>"
+        ]
+    },
     "Angular Flex Item Offset": {
         "prefix": "fx-item-offset",
         "description": "Flex Layout Item with fxFlexOffset",

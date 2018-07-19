@@ -60,6 +60,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | fx-import | Flex Layout Import |
 | fx-item | Flex Layout Item |
 | fx-item-align | Flex Layout Item with fxFlexAlign |
+| fx-item-element | Flex Layout Item Element |
 | fx-item-fill | Flex Layout Item with fxFlexFill |
 | fx-item-offset | Flex Layout Item with fxFlexOffset |
 | fx-item-order | Flex Layout Item with fxFlexOrder |
