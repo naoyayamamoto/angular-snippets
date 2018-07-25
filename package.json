@@ -35,7 +35,7 @@
     "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count;",
     "build_snippets": "npm run build_html; npm run build_typescript; npm run build_javascript; npm run build_json",
     "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
-    "build_html": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"html\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".text.html\": .}' > snippets/html.json",
+    "build_html": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"html\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".text.html.basic\": .}' > snippets/html.json",
     "build_typescript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"typescript\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.ts\": .}' > snippets/typescript.json",
     "build_javascript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"javascript\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.js\": .}' > snippets/javascript.json",
     "build_json": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"json\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.json\": .}' > snippets/json.json",
