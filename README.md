@@ -4,7 +4,7 @@
 
 
 # Atom Angular TypeScript & Html Snippets
-Atom TypeScript and Html snippets and code examples for Angular 2,4,5 & 6.
+Atom TypeScript and Html snippets and code examples for Angular 2,4,5,6 & 7.
 
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
@@ -89,6 +89,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-divider | Material Divider |
 | m-divider-inset | Material Inset Divider |
 | m-divider-vertical | Material Vertical Divider |
+| m-drag-drop-box | Material drag drop box |
 | m-expansion-panel | Material Expansion Panel |
 | m-grid-list | Material Grid List |
 | m-icon | Material Icon |
