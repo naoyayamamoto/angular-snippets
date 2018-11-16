@@ -4,9 +4,7 @@
         "description": "Material indeterminate Progress Bar",
         "types": "typescript, html",
         "body": [
-            "<mat-progress-bar",
-            "\tmode=\"indeterminate\"",
-            "</mat-progress-bar>$0"
+            "<mat-progress-bar mode=\"indeterminate\"></mat-progress-bar>$1"
         ]
     },
     "Material Query Progress Bar": {
@@ -14,9 +12,7 @@
         "description": "Material Query Progress Bar",
         "types": "typescript, html",
         "body": [
-            "<mat-progress-bar",
-            "\tmode=\"query\"",
-            "</mat-progress-bar>$0"
+            "<mat-progress-bar mode=\"query\"></mat-progress-bar>$1"
         ]
     },
     "Material Buffer Progress Bar": {
@@ -24,12 +20,7 @@
         "description": "Material Buffer Progress Bar",
         "types": "typescript, html",
         "body": [
-            "<mat-progress-bar",
-            "\tmode=\"buffer\"",
-            "\t[color]=\"${1:color}\"",
-            "\t[value]=\"${2:value}\"",
-            "\t[bufferValue]=\"${3:bufferValue}\"",
-            "</mat-progress-bar>$0"
+            "<mat-progress-bar mode=\"buffer\" [color]=\"${1:color}\" [value]=\"${2:value}\" [bufferValue]=\"${3:bufferValue}\"></mat-progress-bar>$4"
         ]
     },
     "Material Determinate Progress Bar": {
@@ -37,10 +28,7 @@
         "description": "Material Determinate Progress Bar",
         "types": "typescript, html",
         "body": [
-            "<mat-progress-bar",
-            "\tmode=\"determinate\"",
-            "\t[value]=\"${1:value}\">",
-            "</mat-progress-bar>$0"
+            "<mat-progress-bar mode=\"determinate\" [value]=\"${1:value}\"></mat-progress-bar>$2"
         ]
     }
 }
