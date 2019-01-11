@@ -1,4 +1,5 @@
 #!/bin/sh
+npm run build
 
 git config user.name github-bot
 git config user.email bot@github.com

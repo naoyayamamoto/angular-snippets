@@ -2,7 +2,7 @@
   "name": "angular-snippets",
   "publisher": "naoyayamamoto",
   "displayName": "Angular 7 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
-  "description": "Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing) Updated for v7.0.0",
+  "description": "Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing) Updated for v7",
   "icon": "images/angular.png",
   "license": "MIT",
   "repository": {

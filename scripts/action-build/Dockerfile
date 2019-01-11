@@ -1,10 +1,7 @@
-FROM alpine:3.7
+FROM node
 
-RUN apk add --no-cache --virtual=build-deps wget && \
-  wget https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 && \
-  mv jq-linux64 /usr/local/bin/jq && \
-  chmod +x /usr/local/bin/jq && \
-  apk del build-deps
+RUN curl -o /usr/bin/jq -L https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 && \
+    chmod +x /usr/bin/jq
 
 ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]
