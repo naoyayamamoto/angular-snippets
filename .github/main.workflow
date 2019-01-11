@@ -7,7 +7,3 @@ action "Filters for GitHub Actions" {
   uses = "actions/bin/filter@master"
   args = "branch master"
 }
-
-workflow "New workflow 1" {
-  on = "push"
-}
