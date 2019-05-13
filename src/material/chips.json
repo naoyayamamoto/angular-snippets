@@ -5,7 +5,7 @@
         "types": "typescript, html",
         "body": [
             "<mat-chip-list>",
-            "\t<mat-chip>${1:text}<mat-chip>",
+            "\t<mat-chip>${1:text}</mat-chip>",
             "</mat-chip-list>$0"
         ]
     },
@@ -15,7 +15,7 @@
         "types": "typescript, html",
         "body": [
             "<mat-chip-list class=\"mat-chip-list-stacked\">",
-            "\t<mat-chip>${1:text}<mat-chip>",
+            "\t<mat-chip>${1:text}</mat-chip>",
             "</mat-chip-list>$0"
         ]
     },
@@ -24,7 +24,7 @@
         "description": "Material Chip",
         "types": "typescript, html",
         "body": [
-            "<mat-chip>${1:text}<mat-chip>$0"
+            "<mat-chip>${1:text}</mat-chip>$0"
         ]
     }
 }
