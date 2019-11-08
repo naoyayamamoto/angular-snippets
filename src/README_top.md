@@ -4,9 +4,19 @@
 
 
 # Atom Angular TypeScript & Html Snippets
-Atom TypeScript and Html snippets and code examples for Angular 2,4,5,6 & 7.
+Atom TypeScript and Html snippets and code examples for Angular 2,4,5,6,7 & 8.
 
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
+
+The source for the snippets come from:
+* https://angular.io/
+* https://material.angular.io/
+* https://github.com/angular/flex-layout
+* https://github.com/ngrx/platform
+* https://github.com/ngxs
+* https://jestjs.io
+
+and most of all, none of this would exist without the help of all the contributers for fixing, enhancing, testing and making suggestions.
 
 # Snippet Prefixes
 
@@ -20,6 +30,7 @@ All code snippets are based on and follow the Angular style guide https://angula
 | rx- | RxJS Snippets for both TypeScript and JavaScript |
 | sw- | Service Workers Snippets |
 | t- | Test Snippets |
+| e- | Test Expect Snippets |
 | pwa- | Progressive Web Applications Snippets |
 
 # Important

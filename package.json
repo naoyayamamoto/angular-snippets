@@ -1,8 +1,8 @@
 {
   "name": "angular-snippets",
   "publisher": "naoyayamamoto",
-  "displayName": "Angular 7 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
-  "description": "Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing) Updated for v7",
+  "displayName": "Angular 8 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
+  "description": "Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing) Updated for v8",
   "icon": "images/angular.png",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/naoyayamamoto/angular-snippets/issues"
   },
   "homepage": "https://github.com/naoyayamamoto/angular-snippets#readme",
-  "version": "7.0.5",
+  "version": "8.0.0",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
@@ -25,24 +25,54 @@
     "TypeScript",
     "HTML",
     "Angular Material",
-    "Angular 7"
+    "Angular 8"
   ],
   "activationCommands": {
     "atom-workspace": "angular-snippets:toggle"
   },
   "scripts": {
-    "prebuild": "find src -name '*.json' -exec cat {} \\; | jq -s 'add' > dist/snippets.json",
+    "test": "jest",
+    "prebuild": "npx ts-node src/index.ts | jq -s 'add' > dist/snippets.json",
     "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count;",
     "build_snippets": "npm run build_html; npm run build_typescript; npm run build_javascript; npm run build_json",
     "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
-    "build_html": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"html\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".text.html.basic\": .}' > snippets/html.json",
-    "build_typescript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"typescript\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.ts\": .}' > snippets/typescript.json",
-    "build_javascript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"javascript\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.js\": .}' > snippets/javascript.json",
-    "build_json": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"json\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.json\": .}' > snippets/json.json",
+    "build_html": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"html\"))) | from_entries | {\".text.html.basic\": .}' > snippets/html.json",
+    "build_typescript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"typescript\"))) | from_entries | {\".source.ts\": .}' > snippets/typescript.json",
+    "build_javascript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"javascript\"))) | from_entries | {\".source.js\": .}' > snippets/javascript.json",
+    "build_json": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"json\"))) | from_entries | {\".source.json\": .}' > snippets/json.json",
     "generate_readme_table": "cat dist/snippets.json | grep '\"prefix\"\\|\"description\"' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sed -e 's/$/ |/g' | sed -e 's/^/| /' | sort  >> README.md",
     "dup_snippet": "cat dist/snippets.json | grep '\": {' | sort | uniq -d",
     "dup_name": "cat dist/snippets.json | grep 'prefix' | sort | uniq -d",
     "dups": "npm run dup_snippet; npm run dup_name",
     "count": "cat dist/snippets.json | grep 'prefix' | wc -l"
+  },
+  "dependencies": {
+    "Angular-BeastCode": "github:BeastCode/VSCode-Angular-TypeScript-Snippets"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.6",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/*.spec.+(ts|tsx|js)"
+    ]
   }
 }

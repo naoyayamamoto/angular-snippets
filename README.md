@@ -4,7 +4,7 @@
 
 
 # Atom Angular TypeScript & Html Snippets
-Atom TypeScript and Html snippets and code examples for Angular 2,4,5,6 & 7.
+Atom TypeScript and Html snippets and code examples for Angular 2,4,5,6,7 & 8.
 
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
@@ -54,24 +54,56 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | Snippet | Description |
 | ------- | ----------|
 | cli-cheatsheet | Cli Cheat Sheet |
+| e-atbr | ExpectAsync toBeResolved |
+| e-ntb | Expect Not toBe |
+| e-ntbd | Expect not toBe Defined |
+| e-ntbf | Expect not toBe Falsy |
+| e-ntbn | Expect Not toBeNull |
+| e-ntbt | Expect not toBe Truthy |
+| e-ntbu | Expect not toBe Undefined |
+| e-nthbc | Expect Not toHaveBeenCalled |
+| e-ntm | Expect Not toMatch |
+| e-ntmr | Expect Not toMatch regex |
+| e-tb | Expect toBe |
+| e-tbct | Expect toBeCloseTo |
+| e-tbd | Expect toBe Defined |
+| e-tbf | Expect toBe Falsy |
+| e-tbgt | Expect toBeGreaterThan |
+| e-tbgtoe | Expect toBeGreaterThanOrEqual |
+| e-tbio | Expect toBeInstanceOf |
+| e-tblt | Expect toBeLessThan |
+| e-tbltoe | Expect toBeLessThanOrEqual |
+| e-tbn | Expect toBeNull |
+| e-tbt | Expect toBe Truthy |
+| e-tbu | Expect toBe Undefined |
+| e-tc | Expect toContain |
+| e-thbc | Expect toHaveBeenCalled |
+| e-thbcw | Expect toHaveBeenCalledWith |
+| e-thlrw | Expect toHaveLastReturnedWith(value) |
+| e-thnrw | Expect toHaveNthReturnedWith(nthCall, value) |
+| e-thp | Expect toHaveProperty |
+| e-thrt | Expect toHaveReturnedTimes(2) |
+| e-thrw | Expect toHaveLastReturnedWith(value) |
+| e-tm | Expect toMatch |
+| e-tm | Expect toMatchObject |
+| e-tmr | Expect toMatch regex |
+| e-tms | Jest Expect toMatchSnapshot |
+| e-tse | Expect toStrictEqual |
 | fx-col | Flex Layout Column |
-| fx-col-reverse | Flex Layout Column |
-| fx-full-layout-element | Flex Full Layout Element |
+| fx-col-element | Flex Layout Column with Element |
+| fx-col-reverse | Flex Layout Reverse Column |
 | fx-import | Flex Layout Import |
 | fx-item | Flex Layout Item |
 | fx-item-align | Flex Layout Item with fxFlexAlign |
-| fx-item-element | Flex Layout Item Element |
 | fx-item-fill | Flex Layout Item with fxFlexFill |
 | fx-item-offset | Flex Layout Item with fxFlexOffset |
 | fx-item-order | Flex Layout Item with fxFlexOrder |
 | fx-layout | Flex Layout Property |
 | fx-layout-align | Flex Layout Align Property |
-| fx-layout-align-center | Flex Layout Align Center |
 | fx-layout-gap | Flex Layout Gap Property |
 | fx-row | Flex Layout Row |
 | fx-row-reverse | Flex Layout Reverse Row |
-| m-accordion | Material Accordion |
-| m-action-row | Material Expansion Panel Action Row |
+| m-accordion> | Material Accordion |
 | m-button | Rectangular Material button w/ no elevation. |
 | m-button-fab | Circular button w/ elevation. |
 | m-button-fab-mini | Small circular button w/ elevation. |
@@ -100,11 +132,6 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-list | Material List |
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
-| m-menu | Material Menu |
-| m-menu-item | Material Menu Item |
-| m-menu-item-button | Material Menu Item Button |
-| m-menu-overlap-trigger | Material Menu Overlap Trigger |
-| m-menu-trigger-for | Material Menu Trigger For |
 | m-paginator | Material Paginator |
 | m-progress-bar | Material Determinate Progress Bar |
 | m-progress-bar-buffer | Material Buffer Progress Bar |
@@ -119,8 +146,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-slider-tickInterval | Material Slider tickInterval |
 | m-slider-tickInterval-auto | Material Slider tickInterval Auto |
 | m-slider-vertical | Material Vertical Slider |
-| m-spinner | Material Spinner |
-| m-spinner-determinate | Material Determinate Spinner |
+| m-spinner | Material Determinate Spinner |
 | m-spinner-indeterminate | Material Indeterminate Spinner |
 | m-step | Material Vertical Stepper |
 | m-stepper-horizontal | Material Horizontal Stepper |
@@ -150,6 +176,11 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-component-inline | Component with inline Template and Styles |
 | ng-component-value-accessor | Angular Component With NG_VALUE_ACCESSOR |
 | ng-conf | The World's Original Angular Conference |
+| ng-container | Angular Container |
+| ng-container-component | Angular Container with *ngContainerOutlet |
+| ng-container-ngfor | Angular Container with *ngFor |
+| ng-container-template | Angular Container with *ngTemplateOutlet |
+| ng-content | Angular content |
 | ng-controller | Use component instead. |
 | ng-debug | pre obj pipe json |
 | ng-debug-async | pre obj pipe async pipe json |
@@ -157,7 +188,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-directive-attribute | Attribute directive |
 | ng-directive-css | CSS directive |
 | ng-doCheck | Lifecycle hook: Called every time that the input properties of a component or a directive are checked |
-| ng-event | Event: (event) = \"expression()\" |
+| ng-event | Event: (event) = \"onEvent()\" |
 | ng-filter | For performance reasons, no comparable pipe exists in Angular 2. Do all your filtering in the component. If you need the same filtering code in several templates, consider building a custom pipe. |
 | ng-for | For-loop directive |
 | ng-for-index | For-loop directive with index |
@@ -166,10 +197,10 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-girls | Angular Girls |
 | ng-hide | Usage: Bind to the hidden property. |
 | ng-href | Usage: Bind to the href property. |
-| ng-http-get | HttpClient observable get request |
+| ng-http-get | Http observable get request |
 | ng-http-get-post | Http observable get & post request |
-| ng-http-get-v2 | Deprecated Http observable get request |
 | ng-http-interceptor | Intercept an outgoing HttpRequest and optionally transform it or the response. |
+| ng-httpClient-get | HttpClient observable get request |
 | ng-if | If directive: *ngIf=\"expression\" |
 | ng-if-else | v4: If else directive: *ngIf=\"expression; else\" |
 | ng-if-then-else | v4: If then else directive: *ngIf=\"expression; then; else\" |
@@ -177,7 +208,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-input | Class Input Property |
 | ng-interpolation | Interpolation: {{ interpolation }} |
 | ng-material-module | App Material Module |
-| ng-model | Two-way data binding with the NgModel |
+| ng-model | ngModel directive: [(ngModel)]=\"name\" |
 | ng-module | Feature Module |
 | ng-module-root | App root module |
 | ng-ngOnChanges | Lifecycle hook: Called before any other lifecycle hook |
@@ -198,15 +229,18 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-pipe-lowercase | Lowercase pipe |
 | ng-pipe-percent | Percent pipe - Usage: number_expression &#x7c; percent[:digitInfo] |
 | ng-pipe-slice | Slice pipe - Usage: array_or_string_expression &#x7c; slice:start[:end] |
-| ng-pipe-titlecase | Titlecase pipe |
+| ng-pipe-titlecase | v4: Titlecase pipe |
 | ng-pipe-uppercase | Uppercase pipe |
 | ng-property | Property: [property]=\"expression\" |
 | ng-repeat | Use ngFor instead. |
+| ng-route-feature | Angular Route Feature |
 | ng-route-guard-canactivate | CanActivate Guard Route |
 | ng-route-guard-canactivatechild | CanActivateChild Route |
 | ng-route-guard-candeactivate | CanDeactivate Guard Route |
 | ng-route-guard-canload | CanLoad Guard Route |
 | ng-route-guard-resolve | Resolve Guard Route |
+| ng-route-lazy | Router link |
+| ng-route-lazy | Router link |
 | ng-router | Router template |
 | ng-router-appmodule | Routes to include in root module |
 | ng-router-attribute | Router link |
@@ -220,11 +254,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-src | Usage: Bind to the src property. |
 | ng-style | CSS style |
 | ng-switch | Switch template |
-| ng-test-component-async | TODO |
-| ng-test-component-synchronous | TODO |
-| ng-test-directive | TODO |
-| ng-test-pipe | Test a pipe |
-| ng-test-service | TODO |
+| ng-template | Angular template |
 | ng-validator | Angular validator snippet |
 | ngrx-action-const | ngRx Single action |
 | ngrx-action-creator | ngRx Single action with const |
@@ -246,13 +276,28 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | nx-cheatsheet | Nx Cheat Sheet |
 | nx-ngrx-cheatsheet | Nx Cheat Sheet |
 | pwa-link-manifest | PWA Link Manifest |
+| pwa-manifest | PWA Json Manifest |
 | rx-import-observable | RxJS Import Observable |
-| rx-import-operator | RxJS Import Add Operator |
+| rx-import-operator | RxJS Import an Operator |
 | rx-import-subject | RxJS Import Subject |
-| rx-mergeMap-example | RxJS MergeMap Example |
+| rx-mergeMap | RxJS MergeMap Example |
 | sw-register | Register Service Worker |
 | sw-register-and-check | Register Service Worker and Check |
-| t-describe-it | Describe, It & Expect Example |
+| t-afterAll | afterAll |
+| t-afterEach | afterEach |
+| t-beforeAll | beforeAll |
+| t-beforeEach | beforeEach |
+| t-component-async | Test Async Component |
+| t-component-sync | Test Synchronous Component |
+| t-component-sync-old | Test Synchronous Component |
+| t-describe | Describe |
+| t-describe-it | Describe, It & Expect |
+| t-directive | Test a directive |
+| t-it | It |
+| t-ite | It and Expect |
+| t-module | Test Module |
+| t-pipe | Test a pipe |
+| t-service | Test a service |
 | wat | A lightning talk by Gary Bernhardt from CodeMash 2012. ng-wat talk by Shai Reznik in 2015 |
 
 
