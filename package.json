@@ -1,8 +1,8 @@
 {
   "name": "angular-snippets",
   "publisher": "naoyayamamoto",
-  "displayName": "Angular 8 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
-  "description": "Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing) Updated for v8",
+  "displayName": "Angular 10 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
+  "description": "Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing) Updated for v10",
   "icon": "images/angular.png",
   "license": "MIT",
   "repository": {
@@ -25,7 +25,7 @@
     "TypeScript",
     "HTML",
     "Angular Material",
-    "Angular 8"
+    "Angular 10"
   ],
   "activationCommands": {
     "atom-workspace": "angular-snippets:toggle"
@@ -50,12 +50,12 @@
     "Angular-BeastCode": "github:BeastCode/VSCode-Angular-TypeScript-Snippets"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.22",
-    "@types/node": "^12.12.6",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.54",
     "jest": "^24.9.0",
-    "ts-jest": "^24.1.0",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.7.2"
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -68,7 +68,7 @@
     },
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "tsconfig.json"
+        "tsConfig": "tsconfig.json"
       }
     },
     "testMatch": [
