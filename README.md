@@ -4,7 +4,7 @@
 
 
 # Atom Angular TypeScript & Html Snippets
-Atom TypeScript and Html snippets and code examples for Angular 2,4,5,6,7 & 8.
+Atom TypeScript and Html snippets and code examples for Angular 10+.
 
 All code snippets are based on and follow the Angular style guide https://angular.io/docs/ts/latest/guide/style-guide.html
 
