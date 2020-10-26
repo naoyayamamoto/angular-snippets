@@ -182,6 +182,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-afterContentInit | Lifecycle hook: Called after ngOnInit when the component's or directive's content has been initialized |
 | ng-afterViewChecked | Lifecycle hook: Called after every check of the component's view. Applies to components only |
 | ng-afterViewInit | Lifecycle hook: Called after ngAfterContentInit when the component's view has been initialized |
+| ng-async-validator-fn | Angular Async Validator Function |
 | ng-binding-oneway | Property: [property]=\"expression\" |
 | ng-binding-twoway | Two-way data binding with the NgModel |
 | ng-bootstraping | Bootstraping example |
@@ -273,6 +274,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | ng-switch | Switch template |
 | ng-template | Angular template |
 | ng-validator | Angular validator snippet |
+| ng-validator-fn | Angular Validator Function |
 | ngrx-action-const | ngRx Single action |
 | ngrx-action-creator | ngRx Single action with const |
 | ngrx-action-creator-enum | ngRx Single action creator for enum |
