@@ -50,12 +50,12 @@
     "Angular-BeastCode": "github:BeastCode/VSCode-Angular-TypeScript-Snippets"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.15",
-    "@types/node": "^14.14.3",
-    "jest": "^26.6.1",
-    "ts-jest": "^26.4.2",
-    "ts-node": "^9.0.0",
-    "typescript": "^3.9.7"
+    "@types/jest": "^26.0.24",
+    "@types/node": "^14.17.12",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.4.2"
   },
   "jest": {
     "moduleFileExtensions": [

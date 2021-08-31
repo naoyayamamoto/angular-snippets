@@ -145,6 +145,7 @@ You don't need to type any dashes: "ngrxr" -> "ng-rx-reducer" snippet
 | m-list | Material List |
 | m-list-item | Material List Item |
 | m-list-ngfor | Material List ngFor |
+| m-menu | Material Menu |
 | m-paginator | Material Paginator |
 | m-progress-bar | Material Determinate Progress Bar |
 | m-progress-bar-buffer | Material Buffer Progress Bar |
