@@ -1,8 +1,14 @@
 {
-    "Angular Flex Column": {
-        "prefix": "fx-col",
-        "description": "Flex Layout Column",
-        "types": "typescript, html",
-        "body": "fxLayout=\"column\" fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\" fxLayoutGap=\"${3:gap}px\"$0"
-    }
+  "Angular Flex Column": {
+    "prefix": "fx-col",
+    "description": "Flex Layout Column",
+    "types": "typescript, html",
+    "body": "fxLayout=\"column\" fxLayoutAlign=\"${1:start,center,end,space-around,space-between} ${2:start,center,end,stretch}\" fxLayoutGap=\"${3:gap}px\"$0"
+  },
+  "Material Grid List": {
+    "prefix": "m-grid-list",
+    "description": "Material Grid List",
+    "types": "typescript, html",
+    "body": "<mat-grid-list cols=\"${1:cols}\" rowHeight=\"${2:height}px\">\n\t<mat-grid-tile\n\t\t*ngFor=\"let ${3:tile} of ${4:tiles}\"\n\t\t[colspan]=\"${3:tile}.cols\"\n\t\t[rowspan]=\"${3:tile}.rows\">\n\t\t{{${3:tile}.text}}\n\t</mat-grid-tile>\n</mat-grid-list>$0"
+  }
 }
